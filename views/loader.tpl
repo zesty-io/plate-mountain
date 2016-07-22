@@ -1,23 +1,18 @@
-(** plate: mountain > loader **)
-(** 
-	- loader is the first parsley view file to load on every page load  
-	- loader is the kickstarter to all the views.
-	- {{current_view}} is the only call neccesary here. It is common to 
-	  wrap current_view in a container with a header and footer above it	
-**)
-{{include header}}
+<!-- The loader has content that is in between the <body> tags and that is consistent across all the pages of your site. For example, you probably have the same header, footer, and navigation bar on each page. Therefore those elements of your page would go here.  -->
+
+{{ include header }}
 
 
 <div class="content-container z-row">
-	
+
 	<div class="structure content">
 		<div class="container">
-			<h4 class="title"> {{thispage.lead_in_title}} </h4>
+			<h4 class="title"> {{ thispage.lead_in_title }} </h4>
 		</div>
-		{{current_view}}
-		
-		
+		{{ current_view }}
+
+
 		<div class="clear"></div>
 	</div>
 </div>
-{{include footer}}
+{{ include footer }}
