@@ -1,18 +1,16 @@
-(** plate: mountain > footer snippet **)
+<!-- Snippets are not associated with a specific view but can be included on any page -->
 <div class="footer-container">
 	<div class="z-row">
-		
-		<div class="triangle-container"style="background:url({{clippings.triangle.getImage()}});background-repeat: no-repeat; background-position: center;"> <div class="social-links" {{include garnish-grey-social-links}}</div> 
-			
+
+		<div class="triangle-container"style="background:url({{clippings.triangle.getImage()}});background-repeat: no-repeat; background-position: center;"> <div class="social-links" {{include garnish-grey-social-links}}</div>
+
 			<div class="contact">
-				{{clippings.address}}|{{clippings.phone_number}}|{{clippings.email}}
-			</div> 
-			
-			<div class="info">
-				{{clippings.site_name}} {{clippings.footer_text}} </div>
+				{{ clippings.address }}|{{ clippings.phone_number }}|{{ clippings.email }}
 			</div>
-		</div>	
+
+			<div class="info">
+				{{ clippings.site_name }} {{ clippings.footer_text }} </div>
+			</div>
+		</div>
 	</div>
-</div>	
-
-
+</div>

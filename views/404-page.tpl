@@ -1,15 +1,10 @@
-(** plate: mountain > 404 page view **)
+<!-- If you would like a custom '404 - Not Found' page, add that code here. -->
 
-(**
-	404 page is a required page. By default it starts with the google script
-	that attempts to help the user, but you can put anything. Like an octupus
-	cat dressed up as Obi-Wan Kenobi telling your user what the deal is.
-**)
-{{include header}}
+{{ include header }}
 
 
 <div class="content-container z-row">
-	
+
 	<div class="structure content page404">
 		(** this is your 404 page when a bad page is reached **)
 		<h1>404 Page Not Found</h1>
@@ -28,6 +23,4 @@
 	</div>
 </div>
 
-{{include footer}}
-
-
+{{ include footer }}
